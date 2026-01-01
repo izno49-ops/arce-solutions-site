@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Packs – ARCE Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Packs ARCE Solutions : Essentiel, Sécurité, Sérénité. Offres mensuelles pour TPE/PME.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrap">
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo-arce.png" alt="ARCE Solutions" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="packs.html" class="active">Packs</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="nav-cta">Demander un audit</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Packs</div>
+          <h1 class="section-title">Des offres lisibles, adaptées à votre réalité.</h1>
+          <p class="section-description">
+            Trois niveaux d’accompagnement pour couvrir l’essentiel, renforcer la sécurité
+            ou faire d’ARCE Solutions votre référent informatique dans la durée.
+          </p>
+        </div>
+
+        <div class="packs-grid">
+          <article class="pack-card">
+            <div class="pack-title-row">
+              <div>
+                <div class="pack-name">Pack Essentiel</div>
+                <div class="pack-tagline">Pour démarrer sereinement</div>
+              </div>
+              <div class="pack-price">150 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Support utilisateur à distance.</span></li>
+              <li><span class="bullet"></span><span>Suivi de base de l’état du parc.</span></li>
+              <li><span class="bullet"></span><span>Mises à jour et interventions préventives.</span></li>
+              <li><span class="bullet"></span><span>Interventions sur site à tarif préférentiel.</span></li>
+            </ul>
+            <div class="pack-footnote">
+              Idéal pour les petites structures qui veulent un interlocuteur fiable sans complexité.
+            </div>
+          </article>
+
+          <article class="pack-card highlight">
+            <div class="pack-title-row">
+              <div>
+                <div class="pack-name">Pack Sécurité</div>
+                <div class="pack-tagline">La protection dont votre activité a besoin</div>
+              </div>
+              <div class="pack-price">350 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Tout le pack Essentiel.</span></li>
+              <li><span class="bullet"></span><span>Antivirus professionnel géré.</span></li>
+              <li><span class="bullet"></span><span>Sauvegardes externalisées supervisées.</span></li>
+              <li><span class="bullet"></span><span>Surveillance sécurité et alertes.</span></li>
+              <li><span class="bullet"></span><span>Test de restauration mensuel.</span></li>
+              <li><span class="bullet"></span><span>Rapport mensuel synthétique.</span></li>
+            </ul>
+            <div class="pack-footnote">
+              Recommandé pour les TPE/PME souhaitant réduire fortement le risque d’arrêt d’activité.
+            </div>
+          </article>
+
+          <article class="pack-card">
+            <div class="pack-title-row">
+              <div>
+                <div class="pack-name">Pack Sérénité</div>
+                <div class="pack-tagline">Votre référent informatique dans la durée</div>
+              </div>
+              <div class="pack-price">600 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Tout le pack Sécurité.</span></li>
+              <li><span class="bullet"></span><span>Documentation complète de votre SI.</span></li>
+              <li><span class="bullet"></span><span>Audit annuel inclus.</span></li>
+              <li><span class="bullet"></span><span>Interventions prioritaires.</span></li>
+              <li><span class="bullet"></span><span>Réunions de pilotage trimestrielles.</span></li>
+              <li><span class="bullet"></span><span>Accompagnement stratégique (évolutions, arbitrages, budgets).</span></li>
+            </ul>
+            <div class="pack-footnote">
+              Pensé pour les entreprises qui veulent structurer et professionnaliser leur informatique.
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-actions" style="margin-top:2rem;">
+          <a href="tarifs.html" class="btn-primary">Voir la grille de tarifs</a>
+          <a href="contact.html" class="btn-ghost"><span class="icon">→</span>Demander une simulation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
+      <div class="footer-links">
+        <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
