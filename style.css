@@ -64,8 +64,15 @@ header {
   align-items: center;
 }
 .logo-img {
-  height: 40px;
+  height: 48px;
   width: auto;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.12); /* léger fond clair */
+  border-radius: 8px; /* arrondi élégant */
+  backdrop-filter: blur(4px); /* effet verre dépoli */
+  box-shadow: 0 0 12px rgba(0,0,0,0.4); /* contraste supplémentaire */
+}
+
 }
 
 /* NAV */
