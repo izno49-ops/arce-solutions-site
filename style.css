@@ -406,3 +406,9 @@ a {
     display: none;
   }
 }
+/* FORCE 2 COLONNES POUR PACKS ET TARIFS */
+.packs-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+
