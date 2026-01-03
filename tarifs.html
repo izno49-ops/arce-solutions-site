@@ -4,63 +4,224 @@
   <meta charset="UTF-8">
   <title>Tarifs – ARCE Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tarifs ARCE Solutions : interventions, audit, cybersécurité, VOIP, réseau, maintenance pour TPE/PME.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="container nav">
-    <a href="index.html" class="logo">
-      <img src="logo-arce-light.png" class="logo-img">
-    </a>
-    <nav class="menu">
-      <a href="services.html">Services</a>
-      <a href="packs.html">Packs</a>
-      <a href="tarifs.html" class="active">Tarifs</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="contact.html" class="btn-audit">Demander un audit</a>
-  </div>
-</header>
-
-<section class="page">
-  <div class="container">
-
-    <h1 class="page-title">Une grille simple et transparente.</h1>
-
-    <div class="cards-grid">
-
-      <div class="card">
-        <h3>Support & maintenance</h3>
-        <p>Interventions ponctuelles, dépannage, assistance.</p>
-        <span class="price">45–70 EUR / heure</span>
-      </div>
-
-      <div class="card">
-        <h3>Audit informatique</h3>
-        <p>Diagnostic complet, cartographie, risques.</p>
-        <span class="price">350–900 EUR / jour</span>
-      </div>
-
-      <div class="card">
-        <h3>Cybersécurité</h3>
-        <p>Sauvegardes, PRA, tests, sécurisation.</p>
-        <span class="price">600–1200 EUR / jour</span>
-      </div>
-
+<div class="page-wrap">
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo-arce-light.png" alt="ARCE Solutions" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="packs.html">Packs</a>
+        <a href="tarifs.html" class="active">Tarifs</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="nav-cta">Demander un audit</a>
     </div>
+  </header>
 
-  </div>
-</section>
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Tarifs</div>
+          <h1 class="section-title">Une grille simple, adaptée à votre taille.</h1>
+          <p class="section-description">
+            Les tarifs sont exprimés en EUR et peuvent être ajustés selon votre parc, vos priorités
+            et votre niveau d’accompagnement souhaité.
+          </p>
+        </div>
 
-<footer class="footer">
-  <div class="container">© <span id="year"></span> ARCE Solutions</div>
-</footer>
+        <!-- INTERVENTIONS PONCTUELLES -->
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Interventions ponctuelles</div>
+              <h2 class="service-title">Support & maintenance</h2>
+              <p class="service-body">
+                Interventions à distance ou sur site : panne, installation, configuration,
+                assistance utilisateur, optimisation.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">45–70 EUR / heure</span>
+                <span>Facturation transparente</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- AUDIT -->
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Audit</div>
+              <h2 class="service-title">Audit informatique complet</h2>
+              <p class="service-body">
+                Analyse du SI, risques, conformité, priorisation, feuille de route.
+                Recommandé avant refonte ou montée en charge.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">350–900 EUR / jour</span>
+                <span>Selon périmètre</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CYBERSÉCURITÉ -->
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Cybersécurité</div>
+              <h2 class="service-title">Renforcement & continuité</h2>
+              <p class="service-body">
+                Sécurisation, sauvegardes, PRA, tests de restauration, surveillance.
+                Intervention possible en urgence.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">600–1200 EUR / jour</span>
+                <span>Selon urgence & périmètre</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- RÉSEAU & INFRA -->
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Réseau & infrastructure</div>
+              <h2 class="service-title">Installation & optimisation</h2>
+              <p class="service-body">
+                Installation réseau, sécurisation, segmentation, WiFi pro, optimisation
+                des performances, refonte d’infrastructure.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">450–950 EUR / jour</span>
+                <span>Selon complexité</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- VOIP -->
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Téléphonie VOIP</div>
+              <h2 class="service-title">Installation & gestion</h2>
+              <p class="service-body">
+                Installation, configuration, portabilité, standard, files d’attente,
+                support et maintenance.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">90 EUR / poste</span>
+                <span>Installation & configuration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- MIGRATION CLOUD -->
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Cloud & Microsoft 365</div>
+              <h2 class="service-title">Migration & optimisation</h2>
+              <p class="service-body">
+                Migration Microsoft 365, OneDrive, SharePoint, messagerie, sécurisation,
+                gouvernance et bonnes pratiques.
+              </p>
+              <div class="service-meta">
+                <span class="service-badge">450–850 EUR / jour</span>
+                <span>Selon périmètre</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- CONTRATS DE MAINTENANCE -->
+        <div class="section-header" style="margin-top:2.4rem;">
+          <div class="section-kicker">Contrats de maintenance</div>
+          <h2 class="section-title">Accompagnement dans la durée.</h2>
+          <p class="section-description">
+            Des formules adaptées aux TPE rurales comme aux PME urbaines.
+          </p>
+        </div>
+
+        <div class="packs-grid">
+
+          <!-- MAINTENANCE TPE LOCAL -->
+          <article class="pack-card">
+            <div class="pack-title-row">
+              <div><div class="pack-name">Maintenance TPE Local</div></div>
+              <div class="pack-price">180–260 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Support illimité à distance.</span></li>
+              <li><span class="bullet"></span><span>Interventions sur site incluses (zone locale).</span></li>
+              <li><span class="bullet"></span><span>Gestion des sauvegardes.</span></li>
+            </ul>
+          </article>
+
+          <!-- MAINTENANCE PME PREMIUM -->
+          <article class="pack-card highlight">
+            <div class="pack-title-row">
+              <div><div class="pack-name">Maintenance PME Premium</div></div>
+              <div class="pack-price">380–520 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Support prioritaire.</span></li>
+              <li><span class="bullet"></span><span>Gestion réseau & infrastructure.</span></li>
+              <li><span class="bullet"></span><span>Cybersécurité renforcée.</span></li>
+              <li><span class="bullet"></span><span>Suivi mensuel du SI.</span></li>
+            </ul>
+          </article>
+
+          <!-- MAINTENANCE CYBERSÉCURITÉ -->
+          <article class="pack-card">
+            <div class="pack-title-row">
+              <div><div class="pack-name">Maintenance Cybersécurité</div></div>
+              <div class="pack-price">260–380 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Antivirus pro géré.</span></li>
+              <li><span class="bullet"></span><span>Surveillance 24/7.</span></li>
+              <li><span class="bullet"></span><span>Tests de vulnérabilité.</span></li>
+              <li><span class="bullet"></span><span>Rapport mensuel sécurité.</span></li>
+            </ul>
+          </article>
+
+          <!-- MAINTENANCE SÉRÉNITÉ -->
+          <article class="pack-card">
+            <div class="pack-title-row">
+              <div><div class="pack-name">Maintenance Sérénité</div></div>
+              <div class="pack-price">500–650 EUR<span>/ mois</span></div>
+            </div>
+            <ul class="pack-list">
+              <li><span class="bullet"></span><span>Tout Cybersécurité.</span></li>
+              <li><span class="bullet"></span><span>Documentation du SI & audit annuel.</span></li>
+              <li><span class="bullet"></span><span>Réunions de pilotage trimestrielles.</span></li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="hero-actions" style="margin-top:2.4rem;">
+          <a href="contact.html" class="btn-primary">Demander une estimation personnalisée</a>
+          <a href="packs.html" class="btn-ghost"><span class="icon">←</span>Retour aux packs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
+      <div class="footer-links">
+        <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
+      </div>
+    </div>
+  </footer>
+</div>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
