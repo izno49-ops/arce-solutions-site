@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Zones d’intervention – ARCE Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zones d’intervention ARCE Solutions : Cherré, Segré, Le Lion-d’Angers, Tiercé, Saint-Herblain, Nantes Ouest. Support informatique TPE/PME.">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 2rem;
+      z-index: 1;
+    }
+    .leaflet-container {
+      background: #111; /* Couleur de fond sombre pour le chargement */
+    }
+    /* Style pour les popups pour correspondre au thème sombre */
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+      background: #1a1a1a;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+
+<body>
+<div class="page-wrap">
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo-arce-light.png" alt="ARCE Solutions" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="packs.html">Packs</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="zones.html" class="active">Zones</a>
+        <a href="a-propos.html">À propos</a>
+<a href="faq.html">FAQ</a>
+<a href="politique-confidentialite.html">Confidentialité</a>
+<a href="cgv.html">CGV</a>
+        <a href="contacts.html">Contact</a>
+      </nav>
+      <a href="contacts.html" class="nav-cta">Demander un audit</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div>
+        <div class="hero-kicker"><span class="dot"></span>Proximité & Réactivité</div>
+        <h1 class="hero-title">
+          Présent localement,<br>
+          <strong>efficace partout.</strong>
+        </h1>
+        <p class="hero-subtitle">
+          ARCE Solutions intervient dans un rayon de <strong>30 km</strong> autour de <strong>Cherré (49)</strong> et de <strong>Saint‑Herblain (44)</strong>. Deux zones complémentaires pour accompagner les PME de l'environnement rural au cœur urbain.
+        </p>
+        <div class="hero-badges">
+          <span class="badge badge-accent">Maine-et-Loire (49)</span>
+          <span class="badge badge-accent">Loire-Atlantique (44)</span>
+          <span class="badge">Intervention sous 4h</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#map-section" class="btn-primary">Consulter la carte</a>
+          <a href="contact.html" class="btn-ghost">Vérifier votre éligibilité</a>
+        </div>
+      </div>
+
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Disponibilité</div>
+                <div class="card-highlight">
+                  Une présence <span>bi-départementale</span> stratégique.
+                </div>
+              </div>
+            </div>
+            <ul class="card-list">
+              <li>
+                <span class="bullet"></span>
+                <span><strong>Zone Nord 49 :</strong> Focus proximité et réactivité rurale.</span>
+              </li>
+              <li>
+                <span class="bullet"></span>
+                <span><strong>Zone Nantes Ouest :</strong> Support PME et écosystème numérique.</span>
+              </li>
+              <li>
+                <span class="bullet"></span>
+                <span><strong>Déplacements :</strong> Inclus dans nos forfaits de maintenance.</span>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-note">
+                Rayon d'action principal : 30 km autour des deux pôles.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Territoires</div>
+          <h2 class="section-title">Notre périmètre d'action.</h2>
+          <p class="section-description">
+            Visualisez nos zones d'intervention prioritaire. Nous couvrons le Haut‑Anjou et l'agglomération nantaise pour garantir un support physique rapide.
+          </p>
+        </div>
+
+        <div id="map"></div>
+        
+        <div class="hero-badges" style="justify-content: center; margin-top: 2rem;">
+          <span class="badge"><span class="dot" style="background: #007bff;"></span> Secteur Cherré (49)</span>
+          <span class="badge"><span class="dot" style="background: #007bff;"></span> Secteur Saint-Herblain (44)</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Zone 49</div>
+              <h3 class="service-title">Haut-Anjou</h3>
+              <p class="service-body">Couverture de Segré-en-Anjou Bleu, Le Lion-d'Angers, Tiercé, Châteauneuf-sur-Sarthe et communes limitrophes.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-inner">
+              <div class="service-label">Zone 44</div>
+              <h3 class="service-title">Nantes Ouest</h3>
+              <p class="service-body">Couverture de Saint-Herblain, Orvault, Couëron, Sautron, Indre et le pôle Atlantis.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Éligibilité</div>
+          <h2 class="section-title">Vous êtes situé en dehors de ces zones ?</h2>
+          <p class="section-description">
+            Pour les interventions à distance (support, audit, conseil), ARCE Solutions accompagne des entreprises sur toute la France. Pour le présentiel, contactez-nous pour étudier la faisabilité.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn-primary">Demander une étude de zone</a>
+          <a href="packs.html" class="btn-ghost"><span class="icon">→</span>Voir les solutions de support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
+      <div class="footer-links">
+        <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // Initialisation de la carte
+  const map = L.map('map').setView([47.45, -1.10], 9);
+
+  // Fond de carte sombre (CartoDB Dark Matter)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  // Configuration de la couleur badge-accent (Bleu ARCE)
+  const accentColor = "#007bff"; 
+
+  const zones = [
+    {
+      name: "Pôle Haut-Anjou (Cherré)",
+      coords: [47.711, -0.563]
+    },
+    {
+      name: "Pôle Nantes Ouest (St-Herblain)",
+      coords: [47.218, -1.641]
+    }
+  ];
+
+  zones.forEach(zone => {
+    // Marqueur
+    L.marker(zone.coords).addTo(map)
+      .bindPopup(`<b>${zone.name}</b><br>Intervention prioritaire.`);
+
+    // Cercle de 30km
+    L.circle(zone.coords, {
+      color: accentColor,
+      fillColor: accentColor,
+      fillOpacity: 0.15,
+      weight: 2,
+      radius: 30000 
+    }).addTo(map);
+  });
+
+  // Gestion de l'année
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

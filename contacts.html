@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – ARCE Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact ARCE Solutions – Clément Dumont, technicien-consultant informatique.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrap">
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo-arce-light.png" alt="ARCE Solutions" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="packs.html">Packs</a>
+        <a href="tarifs.html">Tarifs</a>
+<a href="zone.html">ZONE</a>
+        <a href="a-propos.html">À propos</a>
+<a href="faq.html">FAQ</a>
+<a href="politique-confidentialite.html">Confidentialité</a>
+<a href="cgv.html">CGV</a>
+        <a href="contacts.html" class="active">Contact</a>
+      </nav>
+      <a href="contacts.html" class="nav-cta">Demander un audit</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Contact</div>
+          <h1 class="section-title">Discutons de votre environnement informatique.</h1>
+          <p class="section-description">
+            Quelques informations sur votre activité et vos outils actuels suffisent pour
+            préparer un premier échange pertinent, à distance ou sur site.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>
+              ARCE Solutions accompagne les TPE/PME du nord du Maine‑et‑Loire. L’objectif :
+              sécuriser, optimiser et simplifier votre système d’information pour que vous
+              puissiez vous concentrer sur votre métier.
+            </p>
+            <div class="contact-block">
+              <h4>Coordonnées</h4>
+              <p class="contact-line"><strong>Contact :</strong> Clément Dumont</p>
+              <p class="contact-line"><strong>Téléphone :</strong> 06 31 71 18 24</p>
+              <p class="contact-line"><strong>E‑mail :</strong> mc.dumont424@laposte.net</p>
+              <p class="contact-line"><strong>Basé à :</strong> Cherré (49)</p>
+              <p class="contact-line"><strong>Zone :</strong> Nord du Maine‑et‑Loire et environs</p>
+            </div>
+            <div class="contact-block" style="margin-top:0.8rem;">
+              <h4>Types d’accompagnement</h4>
+              <p class="contact-line">• Interventions ponctuelles (incident, projet, audit).</p>
+              <p class="contact-line">• Contrats de maintenance mensuels.</p>
+              <p class="contact-line">• Référent informatique dans la durée.</p>
+            </div>
+          </div>
+
+          <!-- Formulaire statique -->
+          <form class="contact-form">
+            <div class="contact-form-row">
+              <div class="field">
+                <label for="nom">Nom / Société <span>*</span></label>
+                <input id="nom" name="nom" type="text" placeholder="Nom de votre entreprise">
+              </div>
+              <div class="field">
+                <label for="email">E‑mail <span>*</span></label>
+                <input id="email" name="email" type="email" placeholder="vous@exemple.fr">
+              </div>
+            </div>
+            <div class="contact-form-row">
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input id="tel" name="tel" type="tel" placeholder="06 xx xx xx xx">
+              </div>
+              <div class="field">
+                <label for="taille">Taille de l’équipe</label>
+                <input id="taille" name="taille" type="text" placeholder="Ex : 10 postes, 1 serveur">
+              </div>
+            </div>
+            <div class="field" style="margin-bottom:0.6rem;">
+              <label for="message">Votre contexte & vos besoins <span>*</span></label>
+              <textarea id="message" name="message" placeholder="Décrivez votre activité, vos outils actuels et vos principales difficultés."></textarea>
+            </div>
+            <div class="contact-submit-row">
+              <button class="btn-primary" type="button">Envoyer ma demande (exemple)</button>
+            </div>
+            <p class="section-description" style="margin-top:0.6rem;font-size:0.8rem;">
+              Ce formulaire est pour l’instant statique. Vous pouvez aussi me contacter
+              directement par téléphone ou par e‑mail.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
+      <div class="footer-links">
+        <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
