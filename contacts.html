@@ -9,190 +9,128 @@
 </head>
 <body>
 <div class="page-wrap">
+  
   <header>
     <div class="nav-inner">
       <a href="index.html" class="logo-link">
         <img src="logo-arce-light.png" alt="ARCE Solutions" class="logo-img">
       </a>
-      <nav class="nav-links">
+      
+      <button class="burger-menu" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
         <a href="services.html">Services</a>
         <a href="packs.html">Packs</a>
         <a href="tarifs.html">Tarifs</a>
         <a href="zone.html">ZONE</a>
         <a href="a-propos.html">À propos</a>
         <a href="faq.html">FAQ</a>
-        <a href="politique-confidentialite.html">Confidentialité</a>
-        <a href="cgv.html">CGV</a>
-        <a href="contacts.html" class="active">Contact</a>
-      </nav>
-      <a href="contacts.html" class="nav-cta">Demander un audit</a>
+        <a href="politique-confidentialite.html" class="desktop-only">Confidentialité</a>
+        <a href="cgv.html" class="desktop-only">CGV</a>
+        <a href="contacts.html" class="active">Contact</a> </nav>
+      
+      <a href="contacts.html" class="nav-cta" id="navCta">Demander un audit</a>
     </div>
   </header>
 
   <main>
-  <section>
-  <div class="section-inner">
-  <div class="section-header">
-  <div class="section-kicker">Contact</div>
-  <h1 class="section-title">Discutons de votre environnement informatique.</h1>
-  <p class="section-description">
-  Quelques informations sur votre activité et vos outils actuels suffisent pour
-  préparer un premier échange pertinent, à distance ou sur site.
-  </p>
-  </div>
-
-  <div class="contact-grid">
-  <div class="contact-info">
-  <p>
-  ARCE Solutions accompagne les TPE/PME du nord du Maine‑et‑Loire. L’objectif :
-  sécuriser, optimiser et simplifier votre système d’information pour que vous
-  puissiez vous concentrer sur votre métier.
-  </p>
-
-  <div class="contact-block">
-  <h4>Coordonnées</h4>
-  <p class="contact-line"><strong>Contact :</strong> Clément Dumont</p>
-  <p class="contact-line"><strong>Téléphone :</strong> 06 31 71 18 24</p>
-  <p class="contact-line"><strong>E‑mail :</strong> <a href="mailto:c.dumont424@laposte.net">c.dumont424@laposte.net</a></p>
-  <p class="contact-line"><strong>Basé à :</strong> Cherré (49)</p>
-  <p class="contact-line"><strong>Zone :</strong> Nord du Maine‑et‑Loire et environs</p>
-  </div>
-
-  <div class="contact-block" style="margin-top:0.8rem;">
-  <h4>Types d’accompagnement</h4>
-  <p class="contact-line">• Interventions ponctuelles (incident, projet, audit).</p>
-  <p class="contact-line">• Contrats de maintenance mensuels.</p>
-  <p class="contact-line">• Référent informatique dans la durée.</p>
-  </div>
-
-  </div>
-
-  <!-- Formulaire remplacé par version AJAX (conserve classes et visuel) -->
-  <div class="form-wrapper">
-    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mlgdkdld" method="POST" novalidate>
-      <div class="contact-form-row">
-        <div class="field">
-          <label for="nom">Nom / Société <span>*</span></label>
-          <input id="nom" name="nom" type="text" placeholder="Nom de votre entreprise" required>
-          <span class="field-error" id="err-nom" aria-live="polite"></span>
+    <section>
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Contact</div>
+          <h1 class="section-title">Discutons de votre environnement informatique.</h1>
+          <p class="section-description">
+            Quelques informations sur votre activité et vos outils actuels suffisent pour
+            préparer un premier échange pertinent, à distance ou sur site.
+          </p>
         </div>
-        <div class="field">
-          <label for="email">E‑mail <span>*</span></label>
-          <input id="email" name="email" type="email" placeholder="vous@exemple.fr" required>
-          <span class="field-error" id="err-email" aria-live="polite"></span>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>
+              ARCE Solutions accompagne les TPE/PME du nord du Maine‑et‑Loire. L’objectif :
+              sécuriser, optimiser et simplifier votre système d’information pour que vous
+              puissiez vous concentrer sur votre métier.
+            </p>
+            <div class="contact-block">
+              <h4>Coordonnées</h4>
+              <p class="contact-line"><strong>Contact :</strong> Clément Dumont</p>
+              <p class="contact-line"><strong>Téléphone :</strong> 06 31 71 18 24</p>
+              <p class="contact-line"><strong>E‑mail :</strong> c.dumont424@laposte.net</p>
+              <p class="contact-line"><strong>Basé à :</strong> Cherré (49)</p>
+              <p class="contact-line"><strong>Zone :</strong> Nord du Maine‑et‑Loire et environs</p>
+            </div>
+            <div class="contact-block" style="margin-top:0.8rem;">
+              <h4>Types d’accompagnement</h4>
+              <p class="contact-line">• Interventions ponctuelles (incident, projet, audit).</p>
+              <p class="contact-line">• Contrats de maintenance mensuels.</p>
+              <p class="contact-line">• Référent informatique dans la durée.</p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="contact-form-row">
+              <div class="field">
+                <label for="nom">Nom / Société <span>*</span></label>
+                <input id="nom" name="nom" type="text" placeholder="Nom de votre entreprise">
+              </div>
+              <div class="field">
+                <label for="email">E‑mail <span>*</span></label>
+                <input id="email" name="email" type="email" placeholder="vous@exemple.fr">
+              </div>
+            </div>
+            <div class="contact-form-row">
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input id="tel" name="tel" type="tel" placeholder="06 xx xx xx xx">
+              </div>
+              <div class="field">
+                <label for="taille">Taille de l’équipe</label>
+                <input id="taille" name="taille" type="text" placeholder="Ex : 10 postes, 1 serveur">
+              </div>
+            </div>
+            <div class="field" style="margin-bottom:0.6rem;">
+              <label for="message">Votre contexte & vos besoins <span>*</span></label>
+              <textarea id="message" name="message" placeholder="Décrivez votre activité, vos outils actuels et vos principales difficultés."></textarea>
+            </div>
+            <div class="contact-submit-row">
+              <button class="btn-primary" type="button">Envoyer ma demande (exemple)</button>
+            </div>
+            <p class="section-description" style="margin-top:0.6rem;font-size:0.8rem;">
+              Ce formulaire est pour l’instant statique. Vous pouvez aussi me contacter
+              directement par téléphone ou par e‑mail.
+            </p>
+          </form>
         </div>
       </div>
-
-      <div class="contact-form-row">
-        <div class="field">
-          <label for="tel">Téléphone</label>
-          <input id="tel" name="tel" type="tel" placeholder="06 xx xx xx xx">
-        </div>
-        <div class="field">
-          <label for="taille">Taille de l’équipe</label>
-          <input id="taille" name="taille" type="text" placeholder="Ex : 10 postes, 1 serveur">
-        </div>
-      </div>
-
-      <div class="field" style="margin-bottom:0.6rem;">
-        <label for="message">Votre contexte & vos besoins <span>*</span></label>
-        <textarea id="message" name="message" placeholder="Décrivez votre activité, vos outils actuels et vos principales difficultés." required></textarea>
-        <span class="field-error" id="err-message" aria-live="polite"></span>
-      </div>
-
-      <!-- Honeypot anti-spam -->
-      <div style="display:none;">
-        <label for="website">Website</label>
-        <input id="website" name="website" type="text" autocomplete="off">
-      </div>
-
-      <div class="contact-submit-row">
-        <button id="submit-btn" class="btn-primary" type="submit">Envoyer ma demande</button>
-      </div>
-
-      <p class="section-description" style="margin-top:0.6rem;font-size:0.8rem;">
-        Ce formulaire envoie vos informations via Formspree. Si vous préférez, contactez‑moi par téléphone ou e‑mail.
-      </p>
-
-      <p id="form-status" class="form-status" aria-live="polite" style="margin-top:0.6rem;"></p>
-    </form>
-  </div>
-
-  </div>
-  </div>
-  </section>
+    </section>
   </main>
 
   <footer>
-  <div class="footer-inner">
-  <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
-  <div class="footer-links">
-  <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
-  </div>
-  </div>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> ARCE Solutions – Informatique TPE / PME</div>
+      <div class="footer-links">
+        <span>Maintenance · Cybersécurité · Audit · Réseau · VOIP</span>
+      </div>
+    </div>
   </footer>
 </div>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+  const burgerBtn = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  const navCta = document.getElementById('navCta');
 
-(function(){
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-  const submitBtn = document.getElementById('submit-btn');
-
-  function setStatus(msg, type){
-    status.textContent = msg;
-    status.classList.remove('success','error');
-    if(type) status.classList.add(type);
+  if(burgerBtn) {
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navCta.classList.toggle('open');
+      burgerBtn.classList.toggle('active');
+    });
   }
-
-  function validateEmail(email){
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  form.addEventListener('submit', async function(e){
-    // Honeypot
-    const honeypot = form.querySelector('input[name="website"]');
-    if(honeypot && honeypot.value){ e.preventDefault(); return; }
-
-    e.preventDefault();
-
-    // Simple validation
-    const nom = form.nom.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-    let ok = true;
-    document.getElementById('err-nom').textContent = '';
-    document.getElementById('err-email').textContent = '';
-    document.getElementById('err-message').textContent = '';
-
-    if(!nom){ document.getElementById('err-nom').textContent = 'Ce champ est requis.'; ok = false; }
-    if(!email || !validateEmail(email)){ document.getElementById('err-email').textContent = 'E‑mail invalide.'; ok = false; }
-    if(!message){ document.getElementById('err-message').textContent = 'Ce champ est requis.'; ok = false; }
-    if(!ok){ setStatus('Veuillez corriger les erreurs.', 'error'); return; }
-
-    submitBtn.classList.add('btn-disabled'); submitBtn.setAttribute('aria-disabled','true');
-    setStatus('Envoi en cours…', null);
-
-    const data = new FormData(form);
-    try {
-      const resp = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
-      if(resp.ok){
-        setStatus('Merci — votre message a bien été envoyé.', 'success');
-        form.reset();
-      } else {
-        let errText = 'Erreur lors de l’envoi. Réessayez.';
-        try { const j = await resp.json(); if(j && j.error) errText = j.error; } catch(e){}
-        setStatus(errText, 'error');
-      }
-    } catch(err){
-      setStatus('Impossible de contacter le serveur. Vérifiez votre connexion.', 'error');
-    } finally {
-      submitBtn.classList.remove('btn-disabled'); submitBtn.removeAttribute('aria-disabled');
-    }
-  });
-})();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
