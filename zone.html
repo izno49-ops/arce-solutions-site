@@ -18,9 +18,8 @@
       z-index: 1;
     }
     .leaflet-container {
-      background: #111; /* Couleur de fond sombre pour le chargement */
+      background: #111;
     }
-    /* Style pour les popups pour correspondre au thème sombre */
     .leaflet-popup-content-wrapper, .leaflet-popup-tip {
       background: #1a1a1a;
       color: #fff;
@@ -37,18 +36,23 @@
       <a href="index.html" class="logo-link">
         <img src="logo-arce-light.png" alt="ARCE Solutions" class="logo-img">
       </a>
-      <nav class="nav-links">
+      
+      <button class="burger-menu" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
         <a href="services.html">Services</a>
         <a href="packs.html">Packs</a>
         <a href="tarifs.html">Tarifs</a>
-        <a href="zones.html" class="active">Zones</a>
-        <a href="a-propos.html">À propos</a>
-<a href="faq.html">FAQ</a>
-<a href="politique-confidentialite.html">Confidentialité</a>
-<a href="cgv.html">CGV</a>
+        <a href="zone.html" class="active">ZONE</a> <a href="a-propos.html">À propos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="politique-confidentialite.html" class="desktop-only">Confidentialité</a>
+        <a href="cgv.html" class="desktop-only">CGV</a>
         <a href="contacts.html">Contact</a>
       </nav>
-      <a href="contacts.html" class="nav-cta">Demander un audit</a>
+      
+      <a href="contacts.html" class="nav-cta" id="navCta">Demander un audit</a>
     </div>
   </header>
 
@@ -70,7 +74,7 @@
         </div>
         <div class="hero-actions">
           <a href="#map-section" class="btn-primary">Consulter la carte</a>
-          <a href="contacts.html" class="btn-ghost">Vérifier votre éligibilité</a>
+          <a href="contact.html" class="btn-ghost">Vérifier votre éligibilité</a>
         </div>
       </div>
 
@@ -159,7 +163,7 @@
           </p>
         </div>
         <div class="hero-actions">
-          <a href="contacts.html" class="btn-primary">Demander une étude de zone</a>
+          <a href="contact.html" class="btn-primary">Demander une étude de zone</a>
           <a href="packs.html" class="btn-ghost"><span class="icon">→</span>Voir les solutions de support</a>
         </div>
       </div>
@@ -178,6 +182,19 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
+  /* SCRIPT BURGER MENU (Fusionné ici) */
+  const burgerBtn = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  const navCta = document.getElementById('navCta');
+
+  if(burgerBtn) {
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navCta.classList.toggle('open');
+      burgerBtn.classList.toggle('active');
+    });
+  }
+
   // Initialisation de la carte
   const map = L.map('map').setView([47.45, -1.10], 9);
 
@@ -220,5 +237,4 @@
 </script>
 
 </body>
-
 </html>
